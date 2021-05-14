@@ -16,7 +16,6 @@ export default function App() {
   const TipButton = ({ percent, total, tip }) => {
     let result = total * percent;
     result = Math.round(result * 100) / 100;
-
     return (
       <TouchableOpacity
       style={percent === tip ? styles.active : styles.button}
