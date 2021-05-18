@@ -51,11 +51,11 @@ export default function App() {
           }}
         />
         <TouchableOpacity
-          style={customTip === tip ? styles.active : styles.button}
+          style={customTip === tip ? styles.customActive : styles.customButton}
           onPress={() => inputRef.current.focus()}
         >
-          <Text style={{ fontSize: 12 }}>Custom</Text>
-          <Text style={{ fontSize: 12 }}>{customTip}%</Text>
+          <Text style={{ fontSize: 14 }}>Custom</Text>
+          <Text style={{ fontSize: 14 }}>{customTip}%</Text>
         </TouchableOpacity>
       </>
     );
@@ -64,12 +64,12 @@ export default function App() {
   return (
     <>
       <LinearGradient colors={["#096d82", "#103f60"]} style={styles.background}>
-        <View style={styles.icon_container}>
+        <View style={styles.iconContainer}>
           <Image
             style={{ width: 50, height: 50, marginRight: 20 }}
             source={require("./assets/CalculatorIcon.jpeg")}
           />
-          <Text style={{ fontSize: 22, color: "white" }}>Tip Calculator</Text>
+          <Text style={{ fontSize: 26, color: "white" }}>Tip Calculator</Text>
         </View>
         <View style={{ height: 600 }}>
           <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
@@ -83,13 +83,13 @@ export default function App() {
                     style={styles.input}
                     keyboardType="decimal-pad"
                     placeholder="0.00"
-                    placeholderTextColor="#cecece"
+                    placeholderTextColor="white"
                     onChangeText={(text) => onChangeTotal(+text)}
                   />
                 </View>
               </View>
 
-              <View style={{ marginVertical: 10 }}>
+              <View style={styles.tipAmountContainer}>
                 <Text style={styles.text}>Tip Amount</Text>
                 <Text style={styles.dollar}>$ {tipAmount.toFixed(2)}</Text>
               </View>
@@ -98,7 +98,7 @@ export default function App() {
                 <TipButton percent={10} />
                 <TipButton percent={15} />
                 <TipButton percent={20} />
-                <CustomTipButton />
+                <CustomTipButton stlye={styles.customButton}/>
               </View>
 
               <View style={styles.resultContainer}>
@@ -126,6 +126,13 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 7,
     borderRadius: 7,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 4,
+      height: 4,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
   },
   background: {
     position: "absolute",
@@ -135,13 +142,9 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   billAmount: {
-    width: 300,
-    justifyContent: "center",
     flexDirection: "row",
-    borderBottomColor: "white",
-    borderBottomWidth: 2,
-    marginBottom: 10,
-    marginTop: 10,
+    justifyContent: "center",
+    alignItems: "center",
   },
   button: {
     justifyContent: "center",
@@ -166,37 +169,72 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   containers: {
+    width: '60%',
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 40,
+    borderBottomWidth: 1,
+    borderBottomColor: 'white',
+    padding: 5,
+  },
+  customActive: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: 80,
+    height: 45,
+    backgroundColor: "#1ACB40",
+    padding: 10,
+    margin: 7,
+    borderRadius: 7,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 4,
+      height: 4,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
+  },
+  customButton: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: 80,
+    height: 45,
+    alignItems: "center",
+    backgroundColor: "#DDDDDD",
+    padding: 10,
+    margin: 7,
+    borderRadius: 7,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 4,
+      height: 4,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
   },
   dollar: {
     color: "white",
-    marginTop: 20,
     fontSize: 20,
-    marginLeft: 42,
   },
   hidden: {
     display: "none",
   },
-  icon_container: {
+  iconContainer: {
     justifyContent: "center",
     alignItems: "center",
     height: 100,
-    marginTop: 50,
+    marginVertical: 20,
     flexDirection: "row",
   },
   input: {
-    height: 40,
-    width: 100,
-    margin: 12,
     borderWidth: 1,
     fontSize: 20,
     color: "white",
     borderColor: "transparent",
+    marginLeft: 3,
   },
   resultContainer: {
     justifyContent: "center",
+    marginTop: 20,
   },
   tipAmount: {
     borderBottomColor: "white",
@@ -204,11 +242,22 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 10,
   },
+  tipAmountContainer: {
+    width: '60%',
+    marginTop: 20,
+    marginBottom: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    borderBottomWidth: 1,
+    borderBottomColor: 'white',
+    padding: 5,
+  },
   tipContainer: {
     flexDirection: "row",
     justifyContent: "center",
   },
   text: {
+    marginBottom: 10,
     fontSize: 25,
     color: "white",
   },
