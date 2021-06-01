@@ -31,9 +31,9 @@ $ npm install
 $ npm start
 ```
 
-After expo has finished bundling choose which device (iOS / Android ) you would like to run the application on.
-*** PLEASE NOTE: This application will not run correctly in the browser ***
+After expo has finished bundling choose which device (iOS / Android ) you would like to run the application on. </br/>
+***This application will not run correctly in the browser***
 
 # Contributors
 
-[Matt Collinsl](https://github.com/matt-collins087) & [Brandon Harden](https://github.com/bmh0013)
+[Matt Collins](https://github.com/matt-collins087) & [Brandon Harden](https://github.com/bmh0013)
