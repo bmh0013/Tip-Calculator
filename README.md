@@ -5,6 +5,7 @@ Simple Mobile app for calculating tip amount and splitting the bill.
 ## In Action
 
 ![Tip Calculator Demo](https://thumbs.gfycat.com/RegularSatisfiedCollie-size_restricted.gif)
+![Tip Calculator Demo](<img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> )
 
 # Stack
 
@@ -15,7 +16,7 @@ Simple Mobile app for calculating tip amount and splitting the bill.
   </tr>
   <tr>
     <td>Frameworks & Libraries</td>
-    <td><img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img alt="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+    <td><img alt="React Native" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
   </tr>
 </table>
 
