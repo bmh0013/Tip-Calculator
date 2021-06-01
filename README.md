@@ -4,7 +4,7 @@ Simple Mobile app for calculating tip amount and splitting the bill.
 
 ## In Action
 
-<img src="https://gfycat.com/regularsatisfiedcollie" width="300">
+<img src="https://thumbs.gfycat.com/RegularSatisfiedCollie-size_restricted" width="300">
 
 # Stack
 
