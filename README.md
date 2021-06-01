@@ -1,6 +1,6 @@
 # Tip Calculator & Bill Splitter
 
-Simple Mobile app for calculating tip amount and splitting the bill.
+Simple mobile app for calculating tip amount and splitting the bill.
 
 ## In Action
 
@@ -19,6 +19,22 @@ Simple Mobile app for calculating tip amount and splitting the bill.
   </tr>
 </table>
 
+## Setup
+This project requires Apple's xCode to test on mobile devices:
+https://apps.apple.com/us/app/xcode/id497799835?mt=12
+
+To run this project, download it locally using git:
+```
+$ git clone https://github.com/bmh0013/TipCalculator-ReactNative.git
+$ cd TipCalculator
+$ npm install
+```
+
+Run terminals to run webpack & start server
+```
+$ npm run expo start
+$ npm run build
+```
 
 # Contributors
 
