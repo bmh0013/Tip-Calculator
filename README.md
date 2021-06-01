@@ -20,7 +20,7 @@ Simple mobile app for calculating tip amount and splitting the bill.
 </table>
 
 ## Setup
-This project requires Apple's xCode to test on mobile devices:
+This project requires Apple's Xcode to test on mobile devices: <br/>
 https://apps.apple.com/us/app/xcode/id497799835?mt=12
 
 To run this project, download it locally using git:
