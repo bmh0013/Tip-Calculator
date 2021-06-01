@@ -26,15 +26,13 @@ https://apps.apple.com/us/app/xcode/id497799835?mt=12
 To run this project, download it locally using git:
 ```
 $ git clone https://github.com/bmh0013/TipCalculator-ReactNative.git
-$ cd TipCalculator
+$ cd TipCalculator-ReactNative
 $ npm install
+$ npm start
 ```
 
-Run terminals to run webpack & start server
-```
-$ npm run expo start
-$ npm run build
-```
+After expo has finished bundling choose which device (iOS / Android ) you would like to run the application on.
+*** PLEASE NOTE: This application will not run correctly in the browser ***
 
 # Contributors
 
