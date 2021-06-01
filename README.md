@@ -4,13 +4,8 @@ Simple Mobile app for calculating tip amount and splitting the bill.
 
 ## In Action
 
-[Live demo](http://BlueberryExpress.net)
-
-![](https://thumbs.gfycat.com/ShabbyLiquidBlackrussianterrier-size_restricted.gif)
-![](https://thumbs.gfycat.com/BruisedPointedAoudad-size_restricted.gif)
-![](https://thumbs.gfycat.com/BarrenWelldocumentedAmphibian-size_restricted.gif)
-
-#
+![Tip Calculator Demo](https://thumbs.gfycat.com/ShabbyLiquidBlackrussianterrier-size_restricted.gif)
+![Tip Calculator Demo](https://thumbs.gfycat.com/RegularSatisfiedCollie-size_restricted.gif)
 
 # Stack
 
